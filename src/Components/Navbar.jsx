@@ -67,9 +67,6 @@ function Navbar() {
             <form className="d-flex">
               <button
                 className="btn btn-outline-dark"
-                // onClick={() => {
-                //   window.location.reload();
-                // }}
               >
                 <i className="bi-cart-fill me-1"></i>
                 Cart
