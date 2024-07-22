@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ProductItems } from '../App'
 
 function Navbar() {
+  let{Products,Quantity} = useContext(ProductItems)
   return<>
    <nav className="navbar navbar-expand-lg navbar-light bg-light"
         id="NavBar">
@@ -71,7 +73,10 @@ function Navbar() {
                 <i className="bi-cart-fill me-1"></i>
                 Cart
                 <span className="badge bg-dark text-white ms-1 rounded-pill">
-                  {/* {Cart} */}
+                {Object.values(Quantity).reduce(
+            (a, b) => (a += parseFloat(b) - 1),
+            Products.length
+          )}
                 </span>
               </button>
             </form>
