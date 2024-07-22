@@ -54,7 +54,7 @@ function ViewCart() {
             </div>
             <div className="Select-Quantity">
               <div className="select">
-                <select
+               <select
                   name="Quantity"
                   id="Quantity"
                   value={Quantity[i]}
