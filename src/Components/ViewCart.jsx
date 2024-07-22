@@ -46,7 +46,8 @@ function ViewCart() {
                 <button onClick={() => removeItem(i)}>Remove</button>
               </div>
             </div>
-          </div>
+            </div>
+          
         );
       })}
     </>
