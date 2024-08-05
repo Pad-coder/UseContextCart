@@ -172,8 +172,10 @@ const App = () => {
     SetTotalPrice(totalPrice);
   }, [Products, Quantity]);
 
-  return <>
-       <ProductItems.Provider value={{
+  return (
+    <>
+      <ProductItems.Provider
+        value={{
           Products,
           SetProducts,
           Quantity,
@@ -182,13 +184,15 @@ const App = () => {
           SetTotalPrice,
           handleQuantity,
           removeItem,
-        }}>
-         <Navbar />
+        }}
+      >
+        <Navbar />
         <ViewCart />
         <PriceTotal />
       </ProductItems.Provider>
       <Footer />
     </>
+  );
 };
 
 export default App;

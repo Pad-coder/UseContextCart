@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ProductItems } from '../App'
 
+
 function Navbar() {
   let{Products,Quantity} = useContext(ProductItems)
   return<>
@@ -26,11 +27,6 @@ function Navbar() {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#!">
                   Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#!">
-                  About
                 </a>
               </li>
               <li className="nav-item dropdown">

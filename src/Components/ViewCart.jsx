@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./ViewCart.css";
 import { ProductItems } from "./../App";
+
 
 function ViewCart() {
   let {
